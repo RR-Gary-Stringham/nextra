@@ -1,5 +1,6 @@
 import { generateStaticParamsFor, importPage } from 'nextra/pages'
 import { useMDXComponents as getMDXComponents } from '../../../../mdx-components'
+import '../../../app/styles.css'
 
 export const generateStaticParams = generateStaticParamsFor('mdxPath')
 

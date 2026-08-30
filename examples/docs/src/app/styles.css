@@ -1,0 +1,110 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@400;500;600;700&family=Roboto:wght@300;400;500;700&family=Fira+Code:wght@300;400;500&display=swap");
+
+:root {
+  --rr-primary: oklch(0.3373 0.0925 258.52);
+  --rr-primary-inverse: #ffffff;
+  --rr-main-bg: oklch(98.511% 0.00011 271.152);
+  --rr-shell-bg: oklch(0.9659 0.0065 208.7829);
+  --rr-accent: oklch(66.27% 0.114 206.9);
+  --rr-accent-soft: oklch(83% 0.04 220);
+  --rr-radius: 4px;
+  --rr-border: 2px solid var(--rr-primary);
+  --rr-shadow: currentColor 0.5px 0.5px 0, currentColor 1px 1px 0, currentColor 1.5px 1.5px 0;
+}
+
+html, body {
+  background: var(--rr-main-bg);
+}
+
+body {
+  font-family: "Roboto", ui-sans-serif, system-ui, sans-serif;
+  color: var(--rr-primary);
+}
+
+.nx-bg-primary-100,
+.nx-bg-primary-200,
+.nx-bg-primary-300 {
+  background: var(--rr-accent-soft) !important;
+}
+
+.nx-text-primary-600,
+.nx-text-primary-700,
+.nx-text-primary-800,
+.nx-prose a {
+  color: var(--rr-accent) !important;
+}
+
+.nx-rounded,
+.nx-rounded-md,
+.nx-rounded-lg,
+.nx-rounded-xl {
+  border-radius: var(--rr-radius) !important;
+}
+
+.nextra-nav-container,
+.nextra-sidebar-container,
+.nextra-toc {
+  background: var(--rr-shell-bg) !important;
+}
+
+.nextra-nav-container {
+  border-top: var(--rr-border);
+  border-bottom: var(--rr-border);
+}
+
+.nx-prose h1,
+.nx-prose h2,
+.nx-prose h3,
+.nx-prose h4 {
+  font-family: "Khand", ui-sans-serif, system-ui, sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--rr-primary);
+}
+
+.nx-prose h1 {
+  font-size: 3.2rem;
+  line-height: 1;
+}
+
+.nx-prose :not(pre) > code {
+  background: var(--rr-primary);
+  color: var(--rr-primary-inverse);
+  border-radius: var(--rr-radius);
+  border: 1px solid var(--rr-primary);
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.nx-prose pre,
+.nx-prose pre code {
+  background: var(--rr-primary) !important;
+  color: var(--rr-primary-inverse) !important;
+  border-radius: var(--rr-radius) !important;
+  font-family: "Fira Code", ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+
+.nx-prose table {
+  border: 1px solid var(--rr-primary);
+}
+
+.nx-prose th,
+.nx-prose td {
+  border-color: var(--rr-primary) !important;
+}
+
+.nx-prose blockquote {
+  border-left: 5px solid var(--rr-accent);
+  background: var(--rr-shell-bg);
+}
+
+.nx-card,
+.nextra-cards a {
+  border: var(--rr-border) !important;
+  border-radius: var(--rr-radius) !important;
+  background: #fff !important;
+}
+
+.nx-card:hover,
+.nextra-cards a:hover {
+  box-shadow: var(--rr-shadow);
+}
